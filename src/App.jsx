@@ -1,19 +1,57 @@
 import { useState } from 'react'
 
 function App() {
+    const [checkIn, setCheckIn] = useState("");
+    const [checkOut, setCheckOut] = useState("");
+    const [error, setError] = useState("");
+
+    const today = new Date().toLocaleDateString("en-CA");
+
+    const handleCheckOutChange = (e) => {
+        const value = e.target.value;
+
+        if (value < checkIn) {
+            setError("Check-out date cannot be before check-in");
+            setCheckOut("");
+        } else {
+            setCheckOut(value);
+            setError("");
+        }
+    };
 
     return (
+
         <form className='form'>
+            {error && (
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {error}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            )}
+
             <h1 className='mb-5'>Hotel Booking Form</h1>
+
             <div className='border p-4 m-4 w-60'>
                 <div className='mb-4'>
                     <label className="">Check-in Date</label>
-                    <input type='date' className="form-control" />
+                    <input
+                        type='date'
+                        min={today}
+                        value={checkIn}
+                        onChange={(e) => setCheckIn(e.target.value)}
+                        className="form-control"
+                    />
                 </div>
 
                 <div className='mb-4'>
                     <label className="">Check-out Date</label>
-                    <input type='date' className="form-control" />
+                    <input
+                        type='date'
+                        min={checkIn}
+                        value={checkOut}
+                        disabled={!checkIn}
+                        onChange={handleCheckOutChange}
+                        className="form-control" />
                 </div>
 
                 <div className='mb-4'>
