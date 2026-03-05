@@ -60,7 +60,7 @@ function App() {
 
             <h1 className='mb-5'>Hotel Booking Form</h1>
 
-            <div className='border p-4 m-4 w-60'>
+            <div className='card-box w-60'>
                 <div className='mb-4'>
                     <label className="">Check-in Date</label>
                     <input
