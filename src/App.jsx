@@ -58,9 +58,20 @@ function App() {
                 </div>
             )}
 
-            <h1 className='mb-5'>Hotel Booking Form</h1>
+            <h1 className='mb-5'>Hotel Booking</h1>
 
             <div className='card-box w-60'>
+                <div class="row g-3 mb-4">
+                    <div class="col">
+                        <label className="">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter the name" aria-label="First name" required />
+                    </div>
+                    <div class="col">
+                        <label className="">E-mail</label>
+                        <input type="email" class="form-control" placeholder="example@gmail.com" />
+                    </div>
+                </div>
+                
                 <div className='mb-4'>
                     <label className="">Check-in Date</label>
                     <input
