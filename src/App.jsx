@@ -39,7 +39,8 @@ function App() {
     }
 
     return (
-
+        <>
+        <img src='/image.png' alt='hotel image' className='background-img'/>
         <form
             className={`form ${wasValidated ? 'was-validated' : ''}`}
             noValidate
@@ -57,8 +58,9 @@ function App() {
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             )}
-
-            <h1 className='mb-5'>Hotel Booking</h1>
+            
+            <h1 className=''>Hotel Booking</h1>
+            <p className='mb-5'>Find and book your perfect stay with ease</p>
 
             <div className='card-box w-60'>
                 <div class="row g-3 mb-4">
@@ -132,6 +134,7 @@ function App() {
                 </div>
             </div>
         </form>
+        </>
     )
 }
 

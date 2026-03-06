@@ -16,7 +16,12 @@
   font-weight: 700;
   color: #1e293b;
   letter-spacing: -0.5px;
-  margin-bottom: 24px;
+}
+
+.form p {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
 }
 
 /* -------- CARD -------- */
@@ -103,4 +108,11 @@
   background-color: #fef2f2;
   border-color: #fecaca;
   color: #dc2626;
+}
+
+.background-img {
+  height: 10rem;
+  width: 100%;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
