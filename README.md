@@ -68,5 +68,4 @@ http://localhost:5173
 ---
 
 ## Screenshots
-![Hotel Booking Form]
-![form image](image.png) ![form image](image-1.png) ![form image](image-2.png) ![form imaget](image-3.png)
+![form image](image.png)
