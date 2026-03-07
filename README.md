@@ -1,16 +1,72 @@
-# React + Vite
+# 🏨 Hotel Booking Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+A fully functional Hotel Booking Form built with React and Bootstrap.
+Users can fill in their details, select check-in/check-out dates, 
+room type, and number of guests. The form includes validations and 
+confirmation alerts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Full name and email input
+- Check-in / Check-out date picker with validation
+- Check-out cannot be before check-in
+- Room type selection (Single, Double, Suite)
+- Guests count (Adults & Children)
+- Special requests textarea
+- Form validation using Bootstrap + React state
+- Success alert on booking confirmation
+- Form resets after successful submission
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
+| Technology | Purpose |
+|------------|---------|
+| React (Vite) | Frontend framework |
+| Bootstrap 5 | UI styling and layout |
+| CSS | Custom styling |
+| JavaScript | Logic and validation |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instructions to Run the Project
+
+### Prerequisites
+- Node.js installed
+- Git installed
+
+### Steps
+```bash
+# 1. Clone the repository
+git clone https://github.com/shrutika-gawande/Hotel-Booking-Platform.git
+
+# 2. Go into the project folder
+cd hotel-booking-platform
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the project
+npm run dev
+
+# 5. Open in browser
+http://localhost:5173
+```
+
+---
+
+## Deployed Link
+🔗 [Click here to view live] https://hotel-booking-form-five.vercel.app/
+
+---
+
+## GitHub Repository
+🔗 [Click here to view source code] https://github.com/shrutika-gawande/Hotel-Booking-Platform
+
+---
+
+## Screenshots
+![Hotel Booking Form]
+![form image](image.png) ![form image](image-1.png) ![form image](image-2.png) ![form imaget](image-3.png)
